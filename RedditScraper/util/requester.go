@@ -79,7 +79,6 @@ func DoRequest(url string, params map[string]string) string {
 			panic(err)
 		}
 
-		fmt.Println("resp.StatusCode =", resp.StatusCode)
 		if resp.StatusCode != 200 {
 			fmt.Println(string(body))
 			fmt.Println("resp.StatusCode != 200", resp.StatusCode)
